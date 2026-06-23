@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Carrito | Index Software</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="computadoras.html">Computadoras</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+
+    <main style="padding: 40px;">
+        <h1>Resumen de tu compra</h1>
+        
+        <table id="cart-table" style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <thead>
+                <tr style="border-bottom: 2px solid #2563eb;">
+                    <th style="text-align: left; padding: 10px;">Producto</th>
+                    <th style="text-align: right; padding: 10px;">Precio</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                </tbody>
+        </table>
+
+        <h3>Total: $<span id="total">0</span> MXN</h3>
+        
+        <button class="btn" onclick="clearCart()">Vaciar Carrito</button>
+        <button class="btn" style="background: #059669;">Finalizar Compra</button>
+    </main>
+
+    <script src="js/Carrito.js"></script>
+    <script>
+        // Esta función se ejecuta al cargar la página para mostrar los datos
+        renderCart();
+    </script>
+</body>
+</html>
